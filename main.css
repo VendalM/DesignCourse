@@ -1,0 +1,1982 @@
+
+/***Подключение шрифтов***/
+
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PhilosopherRegular";
+    src: url("./fonts/Philosopher-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PhilosopherBold";
+    src: url("./fonts/Philosopher-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoItalic";
+    src: url("./fonts/Roboto-Italic.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "fontawesome-webfont";
+    src: url("./fonts/fontawesome-webfont.ttf");
+}
+
+/***Универсальные классы***/
+
+.titleBlock {
+	font-size: 60px;
+	color: #005c7b;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "PhilosopherBold", sans-serif;
+
+}
+
+/***Описание стилей сайта и меню***/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eeeeed;
+}
+
+/***Стили для хедера***/
+
+.headerBackground {
+	height: 100px;
+	background-color: #008daa;
+	padding: 33px 0 31px 0;
+}
+
+.header_txt, .header_txt:hover, .header_txt:visited {
+	font-size: 24px;
+	color: #d4d0c8;
+	font-family: "RobotoRegular", sans-serif;
+	text-decoration: underline;
+	margin-left: 69px;
+	letter-spacing: 0.22px;
+}
+
+.hader_social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 4px 0px 0 90px;
+	padding: 0;
+	width: 274px;
+}
+
+.hader_social li {
+	list-style-type: none;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #d4d0c8;
+}
+
+.hader_social li a {
+	color: #d4d0c8;
+	font-size: 24px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.hader_social li:hover i {
+	color: #eb477b;
+}
+
+.hader_social li:hover {
+	border-color: #eb477b;
+}
+
+.hader_social li:nth-child(1) {
+	padding: 0 4px 2px 3px;
+	margin-left: 2px;
+}
+
+.hader_social li:nth-child(1) a {
+	font-size: 19px;
+}
+
+.hader_social li:nth-child(2) {
+	padding: 1px 0 0 9px;
+}
+
+.hader_social li:nth-child(2) a {
+	font-size: 19px;
+}
+
+.hader_social li:nth-child(3) {
+	border: none;
+	margin: -14px 4px 0 0;
+
+}
+
+.hader_social li:nth-child(3) a {
+	font-size: 37px;
+}
+
+.hader_social li:nth-child(4) {
+	border: none;
+	margin: -10px 4px 0 0;
+}
+
+.hader_social li:nth-child(4) a {
+	font-size: 32px;
+}
+
+.header_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2px 25px 8px 42px;
+}
+
+.header_menu li {
+	list-style-type: none;
+	margin: 16px 13px 5px 2px;
+}
+
+.header_menu li a {
+	text-decoration: none;
+	color: #06bac5;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: "RobotoRegular", sans-serif;
+	letter-spacing: 0.4px;
+
+}
+
+.header_menu li a:hover {
+	text-decoration: none;
+	color: #eb477b;
+}
+
+.dop_move_head {
+	padding: 0 5px 0 14px;
+}
+
+.dop_move_head_q {
+	padding: 0 7px 0 16px;
+}
+
+.fa-circle {
+	font-size: 7px;
+	color: #06bac5;
+	position: absolute;
+	margin: 10px 0 0 0;
+}
+
+/***Стили для основного блока с описанием курса***/
+
+.main__background {
+	height: 980px;
+	width: 100%;	
+	background-image: url('img/block_one.png');
+	background-size: 876px;
+	background-repeat: no-repeat;
+	background-position-x: 277px;
+	background-position-y: 212px;
+	background-color: #eeeeed;
+	box-shadow: inset rgba(0,0,0,.4) 0px 4px 10px;
+}
+
+.main {
+	margin: 95px 56px 0 56px;
+}
+
+.main__title {
+	font-family: "PhilosopherRegular", sans-serif;
+	color: #005c7b;
+	font-size: 55px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main__title span:nth-child(2) {
+	margin-top: 45px;
+}
+
+.main__about{
+	font-family: "RobotoMedium", sans-serif;
+	color: #005c7b;
+	margin-top: 93px;
+	font-size: 24px;
+}
+
+.main__enrole {
+	margin: 38px -4px 0 0;
+	background-color: #005c7b;
+	color: white;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 30px;
+	padding: 4px 18px 12px 22px;
+	border-radius: 50px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main__enrole:hover {
+	text-decoration: none;
+	background-color: #eb477b;
+	color: white;
+}
+
+.aboutCourse {
+	padding-top: 123px;
+	height: 1080px;
+}
+
+.aboutCourse__info {
+	margin-top: 111px;
+}
+
+.aboutCourse__info_picture {
+	width: 90px;
+	height: 90px;
+}
+
+.aboutCourse__info_block:nth-child(1) .aboutCourse__info_picture {
+	margin: 7px 0px 36px 48px;
+}
+
+.aboutCourse__info_block:nth-child(2) .aboutCourse__info_picture{
+	margin: 0 0 45px 20px;
+}
+
+.aboutCourse__info_block:nth-child(3) .aboutCourse__info_picture{
+	margin: 15px 0 38px 6px;
+}
+
+.aboutCourse__background {
+	background-color: #fff;
+}
+
+.aboutCourse_title {
+	margin-bottom: 92px;
+}
+
+.aboutCourse__description_textline {
+	font-size: 24px;
+	color: #005c7b;
+	font-family: "RobotoRegular", sans-serif;
+	padding: 0 60px 0 70px;
+	text-align: justify;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.aboutCourse__description p:nth-child(2) {
+	padding: 0;
+	margin-top: -8px;
+}
+
+.aboutCourse__description p:nth-child(4) {
+	font-size: 25px;
+	margin-top: 22px;
+}
+
+.aboutCourse__description p:nth-child(5) {
+	padding: 0;
+	margin-top: -5px;
+}
+
+.aboutCourse__info_title {
+	color: #005c7b;
+	font-family: "PhilosopherRegular", sans-serif;
+	font-size: 32px;
+	margin: 0 0 16px 50px;
+}
+
+.aboutCourse__info_text {
+	color: #66bbcc;
+	font-family: "RobotoRegular", sans-serif;;
+	font-size: 18px;
+	margin: 5px 0 0 25px;
+}
+
+/***Стили для блока преимущества***/
+
+.features {
+	padding-top: 123px;
+	height: 1080px;
+}
+
+.features__title {
+	padding-bottom: 60px;
+}
+
+.features__list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+height: 800px;
+}
+
+.features__list li {
+	list-style-type: none;
+	font-size: 30px;
+	font-family: "RobotoRegular", sans-serif;
+	color: #005c7b;
+	padding-left: 90px;
+	margin-bottom: 50px;
+}
+
+.features__list li i {
+	margin-right: 42px;
+}
+
+/***Стили для блока Вопросы***/
+
+.questions__background {
+	background-color: white;
+}
+
+.questions {
+	padding: 130px 0 40px 0;
+}
+
+.questions__title {
+	margin-bottom: 5px;
+}
+
+.questions__background {
+	height: 1080px;
+}
+
+.accordion {
+	margin-left: 105px;
+}
+
+.accordion-item {
+	border: none !important;
+}
+
+.accordion-button {
+	flex-direction: row-reverse;
+}
+
+.accordion-button:after {
+	margin: 0 auto 0 0;
+	content:  "\f0d7";
+	font-family: "fontawesome-webfont";
+	font-weight: 400;
+	background-image: none;
+	background-size: cover;
+}
+
+.accordion-header button {
+	color: #008daa;
+	font-size: 24px;
+	font-family: "PhilosopherBold", sans-serif;
+}
+
+.accordion-header span:hover {
+	text-decoration: underline;
+}
+
+.accordion-header button span {
+	width: 100%;
+	margin-left: 15px;
+	line-height: 25px;
+}
+
+.accordion-button {
+	padding: 45px 0 10px 15px;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #008daa;
+	background-color: #fff;
+	box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+	transform: none;
+	content: "\f0d8";
+	font-family: "fontawesome-webfont";
+	font-weight: 400;
+}
+
+.accordion-button:focus {
+	outline: none !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+.accordion-body {
+	color: #005c7d;
+	font-size: 18px;
+	font-family: "RobotoItalic", sans-serif;
+	padding: 0 0 0 25px;
+}
+
+.question_additional {
+	margin: 55px 0 0 0;
+	text-align: center;
+}
+
+.question_additional_title, .question_additional_anchor {
+	font-size: 36px;
+	font-family: "PhilosopherBold", sans-serif;
+	color: #008daa;
+}
+
+.question_additional_title {
+	margin: -20px 0 30px 0;
+}
+
+.question_additional_anchor:hover {
+	color: #eb477b;
+}
+
+/***Стили для блока Отзывы***/
+
+.reviews {
+	height: 1080px;
+	padding: 125px 0 0 0;
+}
+
+.carousel {
+	width: 86%;
+	margin: 0 auto;
+}
+
+.reviews__item {
+	width: 66%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.reviews__title {
+	padding-left: 55px;
+	margin-bottom: 98px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	align-items: flex-start;
+	margin-top: 64px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("./img/arrow_right.png");
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	transform: rotate(180deg);
+}
+
+.carousel-control-next-icon {
+	background-image: url("./img/arrow_right.png");
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+}
+
+.reviews__item_content {
+	font-size: 18px;
+	font-family: "RobotoItalic", sans-serif;
+	color: #005c7b;
+	line-height: 24px;
+	text-align: justify;
+	min-height: 240px;
+	text-indent: 18px;
+	letter-spacing: -0.09px;
+}
+
+.reviews__item_foto {
+	width: 110px;
+	height: 110px;
+	border-radius: 500px;
+	margin-left: 76px;
+}
+
+.reviews__item_name {
+	font-size: 30px;
+	color: #008daa;
+	font-family: "PhilosopherRegular", sans-serif;
+	margin: 16px 0 0 89px;
+}
+
+/***Стили для блока Связаться с нами***/
+
+.contacts {
+	padding-bottom: 206px;
+}
+
+.contacts__background {
+	background-color: #fff;
+}
+
+.contacts__title {
+	padding: 130px 0 150px 0;
+}
+
+.contacts__name {
+	color: #005c7b;
+	font-family: "RobotoMedium", sans-serif;
+	font-size: 32px;
+	margin: 0 0 0 10px;
+}
+
+.contacts__img {
+	width: 260px;
+	height: 120px;
+	margin: -38px 0 0 5px;
+}
+
+.contacts__link {
+	color: #008daa;
+	font-family: "RobotoMedium", sans-serif;
+	font-size: 28px;
+	margin: -5px 10px 0 40px;
+}
+
+.contacts__link:hover {
+	color: #eb477b;
+}
+
+.contacts_social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 55px 0 0 280px;
+}
+
+.contacts_social li {
+	list-style-type: none;
+	margin: 0 75px 0 20px;
+}
+
+.contacts__img_social {
+	width: 70px;
+	height: 70px;
+}
+
+.contacts_social li:nth-child(1):hover {
+	background-image: url(./img/vk-pink.png);
+	background-size: 70px;
+	background-repeat: no-repeat;
+}
+
+.contacts_social li:nth-child(2):hover {
+	background-image: url(./img/fb-pink.png);
+	background-size: 70px;
+	background-repeat: no-repeat;
+}
+
+.contacts_social li:nth-child(3):hover {
+	background-image: url(./img/inst-pink.png);
+	background-size: 70px;
+	background-repeat: no-repeat;
+}
+
+.contacts_social li:nth-child(4):hover {
+	background-image: url(./img/tw-pink.png);
+	background-size: 70px;
+	background-repeat: no-repeat;
+}
+
+.contacts__img_social:hover {
+	opacity: 0;
+}
+
+.contacts_social li:nth-child(4) {
+	margin: 0 0 0 33px;
+}
+
+.contacts__info {
+	margin-top: 95px;
+	color: #005c7b;
+	font-family: "RobotoMedium", sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.contacts__site {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 0 0 65px;
+}
+
+/***Стили для футера***/
+
+.footer__background {
+	background-color: #005c7b;
+}
+
+.footer {
+	padding: 14px 20px 40px 85px;
+}
+
+.footer__text {
+	color: #eeeeed;
+	font-size: 24px;
+	font-family: "RobotoRegular", sans-serif;
+	padding: 0 0 8px 0;
+	margin: 0;
+}
+
+.footer__text_link {
+	color: #eeeeed;
+	font-size: 18px;
+	font-family: "RobotoRegular", sans-serif;	
+	padding: -20px 0 0 0;
+}
+
+.footer__text_link:hover {
+	color: #eeeeed;;
+}
+
+/***Изменение размеров элементов через медиа-запросы***/
+
+@media screen and (min-width: 1801px)  {
+	.mob {
+		display: none;
+	}
+
+	.aboutCourse__mob_text {
+		display: none;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 1800px) and (min-width: 1412px) {
+	.main {
+		margin: 65px 25px 0 25px;
+	}
+
+	.main__title {
+		font-size: 45px;	
+	}
+	
+	.main__title span:nth-child(2) {
+		margin-top: 25px;
+	}
+
+	.main__about{
+		margin-top: 25px;
+		font-size: 18px;
+	}
+
+	.main__enrole {
+		margin: 21px -4px 0 0;
+		padding: 9px 12px 12px 12px;
+		font-size: 16px;
+	}
+
+	.main__background {	
+		background-image: url('img/block_one.png');
+		background-size: 650px;
+		background-repeat: no-repeat;
+		background-position-x: 269px;
+		background-position-y: 185px;
+		height: 720px;
+	}
+
+	.mob {
+		display: none;
+	}
+
+	.aboutCourse {
+		padding-top: 32px;
+		height: 750px;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.aboutCourse_title {
+		margin-bottom: 45px;
+	}
+
+	.aboutCourse__description p:nth-child(3) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description p:nth-child(4) {
+		font-size: 24px;
+	}
+
+	.aboutCourse__description p:nth-child(5) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.reviews {
+		height: 780px;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: none;
+	}
+
+	.contacts__img {
+		width: 200px;
+		margin: -38px 0 0 0;
+	}
+
+	.contacts__link {
+		margin: 0;
+	}
+
+	.contacts__link:hover {
+		color: #eb477b;
+	}
+
+}
+
+@media screen and (max-width: 1411px) and (min-width: 1199px) {
+	.header_menu {
+		margin: 0;
+		padding: 0;
+	}
+
+	.header_menu li a {
+		font-size: 14px;
+		letter-spacing: 0.7px;
+	}
+
+	.main {
+		margin: 55px 15px 0 15px;
+	}
+
+	.main__title {
+		font-size: 35px;	
+	}
+	
+	.main__title span:nth-child(2) {
+		margin-top: 25px;
+	}
+
+	.main__about{
+		margin-top: 25px;
+		font-size: 16px;
+	}
+
+	.main__enrole {
+		margin: 21px -4px 0 0;
+		padding: 9px 12px 12px 12px;
+		font-size: 14px;
+	}
+
+	.main__background {
+		background-image: url('img/block_one.png');
+		background-size: 620px;
+		background-repeat: no-repeat;
+		background-position-x: 269px;
+		background-position-y: 185px;
+		height: 720px;
+	}
+
+	.mob {
+		display: none;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.aboutCourse {
+		padding-top: 32px;
+		height: 810px;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.aboutCourse_title {
+		margin-bottom: 45px;
+	}
+
+	.aboutCourse__description p:nth-child(3) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description p:nth-child(4) {
+		font-size: 24px;
+	}
+
+	.aboutCourse__description p:nth-child(5) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: none;
+	}
+
+	.contacts {
+	padding-bottom: 70px;
+	}
+
+	.contacts__name {
+		font-size: 24px;
+	}
+
+	.contacts__img {
+		width: 180px;
+		margin: -38px 0 0 0;
+	}
+
+	.contacts__link {
+		margin: 0;
+	}
+
+	.contacts__link:hover {
+		color: #eb477b;
+		font-size: 22px;
+	}
+
+	.contacts_social {
+		text-align: center;
+		margin: 0 0 0 32%;
+	}
+
+	.contacts_social li {
+		margin: 10px 30px 0 0; 
+	}
+
+	.contacts_social li:nth-child(4) {
+		margin: 0;
+	}
+
+	.footer__text {
+		font-size: 20px;
+	}
+
+	.footer__text_link {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.headerBackground {
+		padding: 10px 0 0 0;
+	}
+
+	.header_txt, .header_txt:hover, .header_txt:visited {
+		margin: 0;
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.hader_social {
+		margin: 10px auto;
+	}
+
+	.hader_social li:nth-child(1) {
+		padding: 0 5px 2px 4px;
+	}
+
+	.hader_social li:nth-child(1) a {
+		font-size: 15px;
+	} 
+
+	.hader_social li:nth-child(2) {
+		padding: 3px 0 0 9px;
+	}
+
+	.hader_social li:nth-child(2) a {
+		font-size: 15px;
+	}
+
+	.hader_social li:nth-child(3) {
+		margin: -8px 3px 0 0;
+
+	}
+
+	.hader_social li:nth-child(3) a {
+		font-size: 30px;
+	}
+
+	.hader_social li:nth-child(4) {
+		border: none;
+		margin: -4px 6px 0 0;
+	}
+
+	.hader_social li:nth-child(4) a {
+		font-size: 24px;
+	}
+
+	.header_menu {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header_menu li a {
+		font-size: 14px;
+	}
+
+	.main {
+		margin: 8px 6px 0 6px;
+	}
+
+	.main__title {
+		font-size: 28px;	
+	}
+	
+	.main__title span:nth-child(2) {
+		margin-top: 15px;
+	}
+
+	.main__about{
+		margin-top: 25px;
+		font-size: 15px;
+	}
+
+	.main__enrole {
+		margin: 18px -4px 0 0;
+		padding: 9px 12px 12px 12px;
+		font-size: 13px;
+	}
+
+	.main__background {
+		background-image: url('img/block_one.png');
+		background-size: 420px;
+		background-repeat: no-repeat;
+		background-position-x: 38%;
+		background-position-y: 94px;
+		height: 440px;
+	}
+
+	.mob {
+		display: none;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.titleBlock {
+		font-size: 45px;
+	}
+
+	.aboutCourse {
+		padding-top: 32px;
+		height: 711px;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.aboutCourse_title {
+		margin-bottom: 45px;
+	}
+
+	.aboutCourse__description p:nth-child(3) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description p:nth-child(4) {
+		font-size: 20px;
+	}
+
+	.aboutCourse__description p:nth-child(5) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description_textline {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+
+	.aboutCourse__info_title {
+		font-size: 24px;
+	}
+
+	.aboutCourse__info_text {
+		font-size: 16px;
+		margin: 5px 0 0 17px;
+	}
+
+	.aboutCourse__info {
+		margin-top: 45px;
+	}
+
+	.aboutCourse__info_block:nth-child(1) .aboutCourse__info_picture {
+		margin: 10px 0 10px 0;
+	}
+
+	.aboutCourse__info_block:nth-child(2) .aboutCourse__info_picture{
+		margin: 25px 0 10px 10px;
+	}
+
+	.aboutCourse__info_block:nth-child(3) .aboutCourse__info_picture{
+		margin: 25px 0 10px 10px;
+	}
+
+	.aboutCourse__info_picture {
+		width: 70px;
+		height: 70px;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: none;
+	}
+
+	.contacts {
+	padding-bottom: 60px;
+	}
+
+	.contacts__name {
+		font-size: 22px;
+	}
+
+	.contacts__img {
+		width: 90px;
+		margin: -38px 0 0 0;
+	}
+
+	.contacts__link {
+		margin: 0;
+	}
+
+	.contacts__link {
+		font-size: 22px;
+	}
+
+	.contacts_social {
+		text-align: center;
+		margin: 0 0 0 30%;
+	}
+
+	.contacts_social li {
+		margin: 10px 30px 0 0; 
+	}
+
+	.contacts_social li:nth-child(4) {
+		margin: 0;
+	}
+
+	.footer__text {
+		font-size: 18px;
+	}
+
+	.footer__text_link {
+		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 996px) and (min-width: 778px) {
+	.aboutCourse {
+		height: 620px;
+	}
+
+	.features {
+		padding-top: 45px;
+		height: 600px;
+	}
+
+	.features__title {
+		padding-bottom: 40px;
+	}
+
+	.features__list {
+		height: 450px;
+	}
+
+	.features__list li {
+		font-size: 24px;
+		padding-left: 30px;
+		margin-bottom: 20px;
+	}
+
+	.features__list li i {
+		margin-right: 20px;
+	}
+
+	.questions {
+		padding: 60px 0 60px 0;
+	}
+
+	.questions__background {
+		height: auto;
+	}
+
+	.accordion-body {
+		font-size: 16px;
+	}
+
+	.accordion {
+		margin-left: 40px;
+	}
+
+	.accordion-header button {;
+		font-size: 18px;
+	}
+
+	.accordion-button {
+		padding: 20px 0 5px 10px;
+	}
+
+	.question_additional {
+		margin: 25px 0 0 0;
+	}
+
+	.question_additional_title, .question_additional_anchor {
+		font-size: 20px;
+	}
+
+	.question_additional_title {
+		margin: -5px 0 55px 0;
+	}
+
+	.aboutCourse__info {
+		display: none;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: block;
+		margin-top: 45px;
+	}
+
+	.reviews {
+		height: 800px;
+		padding: 40px 0 40px 0;
+	}
+
+	.carousel {
+		width: 96%;
+	}
+
+	.reviews__item {
+		width: 70%;
+	}
+
+	.reviews__title {
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.carousel-control-prev, .carousel-control-next {
+		margin-top: 20px;
+	}
+
+	.carousel-control-prev-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.carousel-control-next-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reviews__item_content {
+		font-size: 18px;
+		line-height: 25px;
+		min-height: 180px;
+		text-indent: 12px;
+	}
+
+	.reviews__item_foto {
+		width: 70px;
+		height: 70px;
+		margin-left: 10px;
+	}
+
+	.reviews__item_name {
+		font-size: 18px;
+		margin: 12px 0 0 16px;
+	}
+
+	.contacts__title {
+		padding: 50px 0 30px 0;
+	}
+
+	.contacts__name {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.contacts__img {
+		width: 80px;
+		height: 60px;
+		margin: -20px 8px 0 8px;
+	}
+
+	.contacts__link {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.contacts_social {
+		margin: 5px 0 0 30%;
+	}
+
+	.contacts_social li {
+		list-style-type: none;
+		margin: 0 15px 0 6px;
+	}
+
+	.contacts__img_social {
+		width: 40px;
+		height: 40px;
+	}
+
+	.contacts_social li:nth-child(1):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(2):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(3):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(4):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(4) {
+		margin: 0;
+	}
+
+	.contacts__info {
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	.contacts__site {
+		margin: 0 0 0 20px;
+	}
+
+	/***Стили для футера***/
+
+	.footer {
+		padding: 14px 20px 40px 85px;
+	}
+
+	.footer__text {
+		font-size: 20px;
+	}
+
+	.footer__text_link {
+		font-size: 16px;	
+		padding: -20px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 777px) and (min-width: 355px) {
+	.header_menu {
+		margin-top: 15px;
+	}
+
+	.header_menu li {
+		list-style-type: none;
+		margin: 2px 10px 2px 0;
+	}
+
+	.hide_mob {
+		display: none;
+	}
+
+	.main__background {
+		background-image: none;
+		height: 680px;
+	}
+
+	.mob {
+		display: block;
+	}
+
+	.main__title__mob {
+		font-family: "PhilosopherRegular", sans-serif;
+		color: #005c7b;
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.main__about__mob {
+		font-family: "RobotoMedium", sans-serif;
+		color: #005c7b;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.main__enrole__mob{
+		margin: 6px 0 0 30%;
+		background-color: #005c7b;
+		color: white;
+		font-family: "RobotoRegular", sans-serif;
+		font-size: 14px;
+		padding: 4px 4px 6px 6px;
+		border-radius: 50px;
+		text-decoration: none;
+		text-align: center;
+		width: 45%;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.main__enrole__mob:hover {
+		text-decoration: none;
+		background-color: #eb477b;
+		color: white;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.titleBlock {
+		font-size: 40px;
+	}
+
+	.aboutCourse {
+		padding-top: 17px;
+		height: 680px;
+	}
+
+	.aboutCourse__info {
+		display: none;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: block;
+		margin-top: 45px;
+	}
+
+	.aboutCourse__mob_com {
+		display: none;
+	}
+
+	.aboutCourse_title {
+		margin-bottom: 24px;
+		margin-top: 20px;
+	}
+
+	.aboutCourse__description p:nth-child(3) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description p:nth-child(4) {
+		font-size: 18px;
+	}
+
+	.aboutCourse__description p:nth-child(5) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description_textline {
+		font-size: 18px;
+		line-height: 25px;
+		padding: 0;
+	}
+
+	.aboutCourse__info_title {
+		font-size: 18px;
+		margin: 0 auto;
+	}
+
+	.aboutCourse__info_text {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.aboutCourse__info {
+		margin-top: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(1) .aboutCourse__info_picture {
+		margin: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(2) .aboutCourse__info_picture{
+		margin: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(3) .aboutCourse__info_picture{
+		margin: 0;
+	}
+
+	.aboutCourse__info_picture {
+		width: 60px;
+		height: 60px;
+	}
+
+	.features {
+		padding-top: 35px;
+		height: 450px;
+	}
+
+	.features__title {
+		padding-bottom: 40px;
+	}
+
+	.features__list {
+	height: 340px;
+	}
+
+	.features__list li {
+		font-size: 18px;
+		padding-left: 18px;
+		margin-bottom: 10px;
+	}
+
+	.features__list li i {
+		margin-right: 10px;
+	}
+
+	.questions {
+		padding: 60px 0 60px 0;
+	}
+
+	.accordion-body {
+		font-size: 14px;
+	}
+
+	.questions__background {
+		height: auto;
+	}
+
+	.accordion {
+		margin: 2px 0 0 2px;
+	}
+
+	.accordion-header button {;
+		font-size: 18px;
+	}
+
+	.accordion-button {
+		padding: 20px 0 5px 10px;
+	}
+
+	.question_additional {
+		margin: 25px 0 0 0;
+	}
+
+	.question_additional_title, .question_additional_anchor {
+		font-size: 20px;
+	}
+
+	.question_additional_title {
+		margin: -5px 0 55px 0;
+	}
+
+	.reviews {
+		height: 700px;
+		padding: 40px 0 40px 0;
+	}
+
+	.carousel {
+		width: 96%;
+	}
+
+	.reviews__item {
+		width: 70%;
+	}
+
+	.reviews__title {
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.carousel-control-prev, .carousel-control-next {
+		margin-top: 20px;
+	}
+
+	.carousel-control-prev-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.carousel-control-next-icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reviews__item_content {
+		font-size: 16px;
+		line-height: 15px;
+		min-height: 160px;
+		text-indent: 12px;
+	}
+
+	.reviews__item_foto {
+		width: 70px;
+		height: 70px;
+		margin-left: 10px;
+	}
+
+	.reviews__item_name {
+		font-size: 18px;
+		margin: 12px 0 0 16px;
+	}
+
+	.contacts__title {
+		padding: 50px 0 30px 0;
+	}
+
+	.contacts__name {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.contacts__img {
+		width: 80px;
+		height: 60px;
+		margin: 0;
+	}
+
+	.contacts__link {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.contacts__site {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+	}
+
+	.contacts_social {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contacts_social li {
+		list-style-type: none;
+		margin: 0 10px 0 6px;
+	}
+
+	.contacts__img_social {
+		width: 40px;
+		height: 40px;
+	}
+
+	.contacts_social li:nth-child(1):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(2):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(3):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(4):hover {
+		background-size: 40px;
+	}
+
+	.contacts_social li:nth-child(4) {
+		margin: 0;
+	}
+
+	.contacts__info {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.contacts__site {
+		margin: 0 0 0 10px;
+	}
+
+	.footer {
+		padding: 10px 15px 20px 20px;
+	}
+
+	.footer__text {
+		font-size: 16px;
+	}
+
+	.footer__text_link {
+		font-size: 14px;	
+		padding: -15px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 354px) {
+	.header_menu {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+	.header_menu li a {
+		font-size: 12px;
+	}
+	.header_txt, .header_txt:hover, .header_txt:visited	{
+		font-size: 10px;
+	}
+	.header_menu li {
+		list-style-type: none;
+		margin: 2px 10px 2px 0;
+	}
+
+	.hide_mob {
+		display: none;
+	}
+
+	.main__background {
+		background-image: none;
+		height: 520px;
+	}
+
+	.mob {
+		display: block;
+	}
+
+	.main__title__mob {
+		font-family: "PhilosopherRegular", sans-serif;
+		color: #005c7b;
+		font-size: 19px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.main__about__mob {
+		font-family: "RobotoMedium", sans-serif;
+		color: #005c7b;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.main__enrole__mob{
+		margin: 6px 0 0 25%;
+		background-color: #005c7b;
+		color: white;
+		font-family: "RobotoRegular", sans-serif;
+		font-size: 12px;
+		padding: 4px 4px 6px 6px;
+		border-radius: 30px;
+		text-decoration: none;
+		text-align: center;
+		width: 45%;
+		align-items: center;
+	}
+	.main__enrole__mob:hover {
+		text-decoration: none;
+		background-color: #eb477b;
+		color: white;
+	}
+
+
+	.aboutCourse__mob_com {
+			display: none;
+	}
+
+	.titleBlock {
+		font-size: 24px;
+	}
+
+	.aboutCourse {
+		padding-top: 17px;
+		height: 640px;
+	}
+
+	.aboutCourse__info {
+		display: none;
+	}
+
+	.carousel__mob_aboutCourse {
+		display: block;
+		margin-top: 45px;
+	}
+
+	.aboutCourse__mob_com {
+			display: none;
+	}
+
+	.aboutCourse_title {
+		margin-bottom: 18px;
+	}
+
+	.aboutCourse__description p:nth-child(3) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description p:nth-child(4) {
+		font-size: 14px;
+		padding: 0;
+	}
+
+	.aboutCourse__description p:nth-child(5) {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.aboutCourse__description_textline {
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+
+	.aboutCourse__info_title {
+		font-size: 16px;
+		margin: 0 auto;
+	}
+
+	.aboutCourse__info_text {
+		font-size: 13px;
+		margin: 0;
+	}
+
+	.aboutCourse__info {
+		margin-top: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(1) .aboutCourse__info_picture {
+		margin: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(2) .aboutCourse__info_picture{
+		margin: 0;
+	}
+
+	.aboutCourse__info_block:nth-child(3) .aboutCourse__info_picture{
+		margin: 0;
+	}
+	.aboutCourse__info_picture {
+		width: 60px;
+		height: 60px;
+	}
+
+	.features {
+		padding-top: 35px;
+		height: 310px;
+	}
+
+	.features__title {
+		padding-bottom: 20px;
+	}
+
+	.features__list {
+		height: 320px;
+	}
+
+	.features__list li {
+		font-size: 16px;
+		padding-left: 10px;
+		margin-bottom: 5px;
+	}
+
+	.features__list li i {
+		margin-right: 5px;
+	}
+
+	.questions {
+		padding: 60px 0 60px 0;
+	}
+
+	.questions__background {
+		height: auto;
+	}
+
+	.accordion {
+		margin: 2px 0 0 2px;
+	}
+
+	.accordion-body {
+		font-size: 14px;
+	}
+
+	.accordion-header button {
+		font-size: 16px;
+	}
+
+	.accordion-button {
+		padding: 20px 0 5px 10px;
+	}
+
+	.question_additional {
+		margin: 25px 0 0 0;
+	}
+
+	.question_additional_title, .question_additional_anchor {
+		font-size: 18px;
+	}
+
+	.question_additional_title {
+		margin: -5px 0 55px 0;
+	}
+
+	.reviews {
+		height: 680px;
+		padding: 40px 0 40px 0;
+}
+
+	.carousel {
+		width: 96%;
+	}
+
+	.reviews__item {
+		width: 70%;
+	}
+
+	.reviews__title {
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+
+	.carousel-control-prev, .carousel-control-next {
+		margin-top: 20px;
+	}
+
+	.carousel-control-prev-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.carousel-control-next-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.reviews__item_content {
+		font-size: 14px;
+		line-height: 15px;
+		min-height: 160px;
+		text-indent: 12px;
+	}
+
+	.reviews__item_foto {
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+	}
+
+	.reviews__item_name {
+		font-size: 16px;
+		margin: 12px 0 0 16px;
+	}
+
+	.contacts__title {
+		padding: 50px 0 30px 0;
+	}
+
+	.contacts__name {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.contacts__img {
+		width: 60px;
+		height: 60px;
+		margin: 0;
+	}
+
+	.contacts__link {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.contacts__site {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+	}
+
+	.contacts_social {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contacts_social li {
+		list-style-type: none;
+		margin: 0 5px 0 6px;
+	}
+
+	.contacts__img_social {
+		width: 30px;
+		height: 30px;
+	}
+
+	.contacts_social li:nth-child(1):hover {
+		background-size: 30px;
+	}
+
+	.contacts_social li:nth-child(2):hover {
+		background-size: 30px;
+	}
+
+	.contacts_social li:nth-child(3):hover {
+		background-size: 30px;
+	}
+
+	.contacts_social li:nth-child(4):hover {
+		background-size: 30px;
+	}
+
+	.contacts_social li:nth-child(4) {
+		margin: 0;
+	}
+
+	.contacts__info {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.contacts__site {
+		margin: 0 0 0 10px;
+	}
+
+	.footer {
+		padding: 10px 15px 20px 20px;
+	}
+
+	.footer__text {
+		font-size: 14px;
+	}
+
+	.footer__text_link {
+		font-size: 12px;	
+		padding: -15px 0 0 0;
+	}
+
+}
